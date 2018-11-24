@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="demo()">点我下载文件呀！！！</button>
+    <p></p>
+    <h1>code:</h1>
+    <textarea cols="100" rows="40">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Document</title>
+        </head>
+        <body>
+            <button onclick="demo()">点我下载文件呀！！！</button>
+            <script src="./jquery-1.10.2.js"></script>
+            <script src="./myJqHelp.js"></script>
+            <script>
+                function demo(){
+                    myJqHelp.excelDownLoad("http://localhost/1.xls", "myProgress","订单查询.xls","2003");
+                }
+            </script>
+        </body>
+        </html>
+    </textarea>
+    <script src="./jquery-1.10.2.js"></script>
+    <script src="./myJqHelp.js"></script>
+    <script>
+        function demo(){
+            myJqHelp.excelDownLoad("http://localhost/1.xls", "myProgress","订单查询.xls","2003");
+        }
+    </script>
+   
+</body>
+</html>
